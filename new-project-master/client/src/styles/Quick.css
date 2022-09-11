@@ -1,0 +1,156 @@
+.main-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  background-color: #0000001e;
+}
+
+.main-container-one {
+  display: none;
+}
+
+.card-quick {
+  width: 800px;
+  background-color: #fff;
+  padding: 30px 10px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.card-row {
+  flex: 1;
+  padding-top: 30px;
+}
+
+.card-row:first-child {
+  margin-right: 20px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: center;
+}
+
+.card-top img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-bottom img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #000;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.div {
+  margin-bottom: 60px;
+  color: #001e28;
+}
+
+.name {
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.category {
+  text-transform: uppercase;
+  padding: 2px 10px;
+  background-color: #000;
+  max-width: max-content;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.d-newprice {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.d-oldprice {
+  color: #ccc;
+  text-decoration: line-through;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.quantity {
+  padding: 2px 30px;
+  background-color: #00000011;
+  margin-top: 20px;
+  max-width: max-content;
+}
+
+.d-desc {
+  letter-spacing: 1.2px;
+}
+
+.fourth-div {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fourth-div button {
+  border: 0;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.fourth-div button:active {
+  transform: translateY(-10px);
+}
+
+.fourth-div button:first-child {
+  background-color: #ffee00;
+  color: white;
+}
+
+.fourth-div button:last-child {
+  background-color: #0066ff;
+  color: white;
+}
+
+.fourth-div button:first-child:hover {
+  background-color: white;
+  color: #ffee00;
+}
+
+.fourth-div button:last-child:hover {
+  background-color: white;
+  color: #0066ff;
+}
+
+.back {
+  padding: 5px 25px;
+  background-color: #000;
+  color: white;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.back:hover {
+  transform: translateY(-5px);
+}

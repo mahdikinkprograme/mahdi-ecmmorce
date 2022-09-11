@@ -1,0 +1,77 @@
+.f-container {
+  padding: 20px 15px;
+}
+
+.f-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-col {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.f-col h1 {
+  margin-bottom: 20px;
+}
+
+.f-col:first-child p {
+  text-align: center;
+  color: #001e28;
+  letter-spacing: 1.2px;
+}
+
+.f-col:nth-child(2) h2,
+.f-col:nth-child(3) h2,
+.f-col:last-child h2 {
+  color: #001e28;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+
+.f-col:nth-child(2) ul li,
+.f-col:nth-child(3) ul li {
+  margin-bottom: 10px;
+}
+
+.f-col:nth-child(2) ul li a,
+.f-col:nth-child(3) ul li a {
+  color: #001e28;
+  transition: all 0.5s;
+  letter-spacing: 1.2px;
+}
+
+.f-col:nth-child(2) ul li a:hover,
+.f-col:nth-child(3) ul li a:hover {
+  color: #ff0000;
+}
+
+.f-copyrow {
+  text-align: center;
+  font-size: 15px;
+  color: #001e28;
+  padding: 20px 0 0;
+}
+
+.f-copyrow p {
+  letter-spacing: 1.2px;
+}
+
+.f-copyrow p span {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .f-row {
+    flex-direction: column;
+  }
+
+  .f-col {
+    margin-bottom: 30px;
+  }
+}

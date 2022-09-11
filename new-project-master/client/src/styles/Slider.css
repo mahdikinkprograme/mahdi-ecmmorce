@@ -1,0 +1,65 @@
+.s-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.s-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.s-arrow.left {
+  left: 15px;
+}
+
+.s-arrow.right {
+  right: 15px;
+}
+
+.s-arrow i {
+  transition: all 0.3s;
+  font-size: 30px;
+}
+
+.s-arrow:hover i {
+  color: #ff0000;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transform: translateX(0vw);
+  transition: all 1s ease-in-out;
+}
+
+.slider {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+}
+
+.s-img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}

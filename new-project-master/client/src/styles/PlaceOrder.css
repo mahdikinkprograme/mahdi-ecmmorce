@@ -1,0 +1,163 @@
+.order-container {
+  min-height: 100vh;
+  margin: 50px 0 30px;
+}
+
+.order-title {
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+  color: #001e28;
+}
+
+.order-row:first-child .order-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-row:last-child {
+  margin-top: 30px;
+  padding: 0 25px;
+  display: flex;
+}
+
+.order-row:last-child .order-col:first-child {
+  flex: 2;
+}
+
+.order-row:last-child .order-col:last-child {
+  flex: 1;
+}
+
+.order-shipping-title {
+  color: #001e28;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+}
+
+.order-shipping-info {
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  color: #001e28;
+}
+
+.order-shipping-info a {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.order-payment {
+  margin: 30px 0;
+}
+
+.order-payment h2 {
+  color: #001e28;
+  margin-bottom: 5px;
+  letter-spacing: 1.5px;
+}
+
+.order-payment span {
+  color: #001e28;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+.order-items {
+  margin-top: 30px;
+}
+
+.order-items-title {
+  letter-spacing: 1.5px;
+  color: #001e28;
+}
+
+.order-cards {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.order-card {
+  padding: 0 0 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #000;
+}
+
+.order-card-body img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.order-card-body a {
+  display: flex;
+  justify-content: center;
+  color: #001e28;
+}
+
+.order-card-footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.order-edit {
+  color: #ff0000;
+}
+
+.order-summary-info {
+  display: flex;
+  justify-content: space-between;
+  color: #001e28;
+  margin: 10px 0;
+  border-bottom: 1px dotted #000;
+}
+
+.order-summary-button {
+  margin-top: 30px;
+}
+
+.order-summary-button button {
+  border: 0;
+  outline: 0;
+  color: white;
+  background-color: #000;
+  padding: 13px 15px;
+  width: 150px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
+  transition: all 0.5s;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.order-summary-button button:hover {
+  background-color: #ff0000;
+}
+
+@media screen and (max-width: 575px) {
+  .order-cards {
+    width: 60%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .order-cards {
+    width: auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order-row:last-child {
+    flex-direction: column;
+  }
+}

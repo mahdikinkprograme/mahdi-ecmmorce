@@ -1,0 +1,162 @@
+.contact-container {
+  min-height: 100vh;
+  margin: 50px 0;
+  padding: 0 30px;
+}
+
+.contact-title {
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #001e28;
+  margin-bottom: 30px;
+}
+
+.contact-row:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-row:nth-child(2) .contact-col {
+  width: 30%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #000;
+  text-align: center;
+  padding: 40px 10px;
+}
+
+.contact-row:nth-child(2) .contact-col i {
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #fff;
+  color: #001e28;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: auto;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.contact-row:nth-child(2) .contact-col i:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+.contact-row:nth-child(2) .contact-col > div {
+  margin-top: 20px;
+}
+
+.contact-row:nth-child(2) .contact-col > div p {
+  color: #001e28;
+  letter-spacing: 1.3px;
+}
+
+.contact-row:nth-child(2) .contact-col > div p:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.contact-row:last-child {
+  margin-top: 50px;
+}
+
+.contact-row:last-child form {
+  padding: 20px;
+}
+
+.contact-row:last-child .form-groupe:first-child,
+.contact-row:last-child .form-groupe:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-row:last-child .form-groupe:first-child input,
+.contact-row:last-child .form-groupe:nth-child(2) input {
+  display: block;
+  width: 49.6%;
+  height: 50px;
+}
+
+.contact-row:last-child .form-groupe:nth-child(3) textarea {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ccc;
+  outline: 0;
+  padding: 10px;
+}
+
+.contact-row:last-child .form-groupe:last-child {
+  margin-top: 15px;
+}
+
+.contact-row:last-child .form-groupe:last-child input[type="submit"] {
+  display: block;
+  margin: auto;
+  border: 0;
+  outline: 0;
+  color: white;
+  background-color: #001e28;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  padding: 17px 0;
+  width: 250px;
+  height: auto;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.contact-row:last-child .form-groupe:last-child input[type="submit"]:hover {
+  background-color: #ff0000;
+}
+
+@media screen and (max-width: 575px) {
+  .contact-row:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .contact-row:nth-child(2) .contact-col {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .contact-row:nth-child(2) .contact-col:last-child {
+    margin-bottom: 0;
+  }
+
+  .contact-row:last-child .form-groupe:first-child,
+  .contact-row:last-child .form-groupe:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .contact-row:last-child .form-groupe:first-child input,
+  .contact-row:last-child .form-groupe:nth-child(2) input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .contact-row:last-child .form-groupe:first-child input:last-child,
+  .contact-row:last-child .form-groupe:nth-child(2) input:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 575px) and (max-width: 992px) {
+  .contact-row:nth-child(2) .contact-col {
+    width: 48%;
+    margin-bottom: 26px;
+  }
+
+  .contact-row:nth-child(2) .contact-col:last-child {
+    margin-bottom: 0;
+  }
+}

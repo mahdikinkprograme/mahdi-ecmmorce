@@ -1,0 +1,116 @@
+.shop-row {
+  border: 1px solid red;
+  min-height: 100vh;
+  margin: 50px 0;
+  display: flex;
+}
+
+.shop-col:first-child {
+  flex: 1;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.shop-col:first-child button {
+  margin-bottom: 20px;
+}
+
+.shop-col:last-child {
+  flex: 4;
+  border: 1px solid #000;
+}
+
+.shop-col:first-child h2 {
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #001e28;
+}
+
+.shop-col:last-child {
+  flex-direction: 5;
+}
+
+.shop-products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding: 20px 0;
+}
+
+.shop-pagination {
+  text-align: center;
+}
+
+.shop-btn {
+  text-transform: capitalize;
+  color: #001e28;
+  border: 0;
+  outline: 0;
+  width: max-content;
+  background-color: transparent;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.shop-btn i {
+  transition: all 0.5s ease-in-out;
+}
+
+.shop-btn:hover i {
+  color: #ff0000;
+  margin-left: 5px;
+}
+
+.shop-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  padding: 5px 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  color: #000;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: #fff;
+  background-color: #ff0000;
+}
+
+.paginationActive a {
+  color: #fff;
+  background-color: #ff0000;
+}
+
+.paginationDisabled a {
+  color: rgba(128, 128, 128, 0.11);
+  background-color: rgba(128, 128, 128, 0.11);
+}
+
+.paginationDisabled:hover a {
+  color: rgba(128, 128, 128, 0.11);
+  background-color: rgba(128, 128, 128, 0.11);
+}
+
+@media screen and (max-width: 575px) {
+  .shop-row {
+    flex-direction: column;
+  }
+  .shop-col:first-child {
+    align-items: center;
+  }
+}

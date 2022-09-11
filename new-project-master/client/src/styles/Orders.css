@@ -1,0 +1,76 @@
+.orderhistory-container {
+  min-height: 100vh;
+}
+
+.orderhistory-row:first-child {
+  margin: 20px 0 50px;
+}
+
+.orderhistory-title {
+  text-align: center;
+  color: #001e28;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.orderhistory-row:last-child .orderhistory-col {
+  display: flex;
+  justify-content: center;
+}
+
+.orderhistory-row:last-child .orderhistory-col .tables {
+  width: 80%;
+}
+
+.orderhistory-row:last-child .orderhistory-col .tables table {
+  width: 100%;
+  color: #001e28;
+}
+
+.orderhistory-row:last-child .orderhistory-col .tables table tbody tr {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.orderhistory-row:last-child
+  .orderhistory-col
+  .tables
+  table
+  tbody
+  tr
+  td
+  button {
+  background-color: #000;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: 0;
+  outline: 0;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.orderhistory-row:last-child
+  .orderhistory-col
+  .tables
+  table
+  tbody
+  tr
+  td
+  button:hover {
+  background-color: #ff0000;
+}
+
+th,
+td,
+tr {
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .orderhistory-row:last-child .orderhistory-col .tables {
+    width: 100%;
+  }
+}
